@@ -1,0 +1,220 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/firstLayout"
+        android:layout_alignParentBottom="true"
+        android:text="START GAME" />
+
+    <RelativeLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignEnd="@+id/secondView"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/secondView"
+        android:background="#7F0A49"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/p1_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="17dp"
+            android:textColor="#FFFFFF"
+            android:text="PLAYER1" />
+
+        <TextView
+            android:id="@+id/p1_sceret_number"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/p1_heading"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="27dp"
+            android:text="Secret_No" />
+
+        <TextView
+            android:id="@+id/p1"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/p1_sceret_number"
+            android:layout_toEndOf="@+id/p1_heading"
+            android:layout_toRightOf="@+id/p1_heading" />
+
+        <TextView
+            android:id="@+id/p1guessheading"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/p1_sceret_number"
+            android:layout_alignStart="@+id/p1_sceret_number"
+            android:layout_below="@+id/p1_sceret_number"
+            android:layout_marginTop="81dp"
+            android:text="GUESS" />
+
+        <TextView
+            android:id="@+id/p1guess"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/p1guessheading"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/p1_sceret_number"
+            android:layout_toRightOf="@+id/p1_sceret_number"
+            android:gravity="bottom"
+            android:maxLines="3"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/p1hint_heading"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p1guessheading"
+            android:layout_marginTop="110dp"
+            android:layout_toLeftOf="@+id/p1guess"
+            android:layout_toStartOf="@+id/p1guess"
+            android:text="RESPONSE" />
+
+        <TextView
+            android:id="@+id/hint"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/p1hint_heading"
+            android:layout_alignBottom="@+id/p1hint_heading"
+            android:layout_toLeftOf="@+id/p1"
+            android:layout_toStartOf="@+id/p1"
+            android:gravity="bottom"
+            android:maxLines="3"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/status"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/hint"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/hint"
+            android:layout_marginBottom="86dp"
+            android:text="Status" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/secondView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/thirdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/secondView"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/p2_heading"
+            android:textColor="#7F0A49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+
+            android:text="PLAYER2" />
+
+        <TextView
+            android:id="@+id/p2_secretNumber"
+            android:textColor="#7F0A49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/p2_heading"
+            android:layout_marginTop="28dp"
+            android:text="Secret_No" />
+
+        <TextView
+            android:id="@+id/p2"
+            android:textColor="#7F0A49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/p2_secretNumber"
+            android:layout_alignLeft="@+id/p2_heading"
+            android:layout_alignStart="@+id/p2_heading"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp" />
+
+        <TextView
+            android:id="@+id/p2_Guess_heading"
+            android:textColor="#7F0A49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/p2_secretNumber"
+            android:layout_marginTop="64dp"
+            android:text="GUESS" />
+
+        <TextView
+            android:id="@+id/p2guess"
+            android:textColor="#7F0A49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/p2_Guess_heading"
+            android:layout_alignBottom="@+id/p2_Guess_heading"
+            android:layout_toEndOf="@+id/p2"
+            android:layout_toRightOf="@+id/p2"
+            android:gravity="bottom"
+            android:maxLines="3"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:textColor="#7F0A49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/p2_Guess_heading"
+            android:layout_marginTop="100dp"
+            android:text="RESPONSE" />
+
+        <TextView
+            android:id="@+id/hint_p2"
+            android:textColor="#7F0A49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView15"
+            android:layout_toLeftOf="@+id/p2guess"
+            android:layout_toStartOf="@+id/p2guess"
+            android:gravity="bottom"
+            android:maxLines="3"
+            android:scrollbars="vertical" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

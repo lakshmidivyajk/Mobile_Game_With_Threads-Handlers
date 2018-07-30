@@ -1,0 +1,48 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\laksh\\Desktop\\MS_Sem1\\SDMA\\PROJECT 4\\ThreadingWithHandlers\\ThreadingWithHandlers\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\laksh\\Desktop\\MS_Sem1\\SDMA\\PROJECT 4\\ThreadingWithHandlers\\ThreadingWithHandlers\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2,5,3,4",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,197,99,157",
+                        "endColumns": "43,232,57,39",
+                        "endOffsets": "94,425,152,192"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,99,332,390",
+                        "endColumns": "43,232,57,39",
+                        "endOffsets": "94,327,385,425"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Android_projects\\ThreadingWithHandlers\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\Android_projects\\ThreadingWithHandlers\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2,5,3,4",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,197,99,157",
+                        "endColumns": "43,232,57,39",
+                        "endOffsets": "94,425,152,192"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,99,332,390",
+                        "endColumns": "43,232,57,39",
+                        "endOffsets": "94,327,385,425"
+                    }
+                }
+            ]
+        }
+    ]
+}
